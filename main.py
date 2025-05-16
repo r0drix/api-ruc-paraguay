@@ -10,7 +10,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-############ rodrigo_rejala@outlook.com ##############
+############ rodrigo.rejala@outlook.com ##############
 
 @app.get("/ruc/")
 async def ruc (numero_ruc : int = Query(..., description="Numero de RUC a buscar")):
@@ -88,7 +88,7 @@ async def nombre_razonsocial(nombre_completo: str = Query(..., min_length=3, des
 
 @app.get("/")
 def read_root():
-    return {"Hello":"Esto es un BACKEND desarrollado por rodrigo_rejala@outlook.com"}
+    return {"Hello":"Esto es un BACKEND desarrollado por rodrigo.rejala@outlook.com"}
 
 
 #$!@$@!%$!!!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#!@#
